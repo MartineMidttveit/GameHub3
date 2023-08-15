@@ -20,7 +20,7 @@ async function getGames() {
                 <p>${game.genre}</p>
                 <p>£ ${game.price}</p>
                 </div>
-                <button class="buy-now">BUY NOW</button>
+                <button class="buy-now">ADD TO CART</button>
                 </div>`
             } 
             
@@ -34,7 +34,7 @@ async function getGames() {
                 <p>${game.genre}</p>
                 <p>£ ${game.price}</p>
                 </div>
-                <button class="buy-now">BUY NOW</button>
+                <button class="buy-now">ADD TO CART</button>
                 </div>`
             }
         });

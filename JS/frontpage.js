@@ -39,7 +39,7 @@ async function getFour () {
       <p>${games[index].genre}</p>
       <p>£ ${games[index].price}</p>
       </div>
-      <button class="buy-now">BUY NOW</button>
+      <button class="buy-now">ADD TO CART</button>
       </div>`
     };
     document.querySelector(".shop-grid").innerHTML = displayMostPopular;
@@ -59,7 +59,7 @@ async function getFour () {
         <p>${games[index].genre}</p>
         <p>£ ${games[index].price}</p>
         </div>
-        <button class="buy-now">BUY NOW</button>
+        <button class="buy-now">ADD TO CART</button>
         </div>`
       };
       document.querySelector("#newReleases").innerHTML = displayNewReleases;
