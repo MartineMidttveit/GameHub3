@@ -64,9 +64,4 @@ async function getFour() {
   }
   
   getFour();
-  
-  
-  
-  
-  
-  
+
