@@ -22,33 +22,14 @@ var slideIndex = 0;
 
 /// MOST POPULAR ///
 
-async function getFour () {
-    const loadGames = await fetch("https://api.noroff.dev/api/v1/gamehub"); 
+async function getFour() {
+    const loadGames = await fetch("https://api.noroff.dev/api/v1/gamehub");
     const games = await loadGames.json();
     let displayMostPopular = "";
+    let displayNewReleases = "";
   
-    for (let index = 0; index <= 3; index++) { 
-      displayMostPopular+=
-      `<div class="game-container">
-        <a href="/HTML/gameDetails.html?id=${games[index].id}">
-        <img src="${games[index].image}" alt="Game-covers of listed products"></a>
-        <div class="game-info">
-        <h2 class="game-title">${games[index].title}</h2>
-        <p>${games[index].genre}</p>
-        <p>£ ${games[index].price}</p>
-        </div>
-        <button class="buy-now">ADD TO CART</button>
-        </div>`
-      };
-      document.querySelector(".shop-grid").innerHTML = displayMostPopular;
-     
-      const startIndex = games.length - 4;
-  
-      if (startIndex >= 0) {
-        let displayNewReleases = "";
-  
-      for (let index = startIndex; index < games.length; index++) { 
-        displayNewReleases+=
+    for (let index = 0; index <= 3; index++) {
+      displayMostPopular +=
         `<div class="game-container">
           <a href="/HTML/gameDetails.html?id=${games[index].id}">
           <img src="${games[index].image}" alt="Game-covers of listed products"></a>
@@ -58,9 +39,34 @@ async function getFour () {
           <p>£ ${games[index].price}</p>
           </div>
           <button class="buy-now">ADD TO CART</button>
-          </div>`
-        };
-        document.querySelector("#newReleases").innerHTML = displayNewReleases;
-  }};
+          </div>`;
+    }
+    document.querySelector(".shop-grid").innerHTML = displayMostPopular;
+  
+    const startIndex = games.length - 4;
+  
+    if (startIndex >= 0) {
+      for (let index = startIndex; index < games.length; index++) {
+        displayNewReleases +=
+          `<div class="game-container">
+            <a href="/HTML/gameDetails.html?id=${games[index].id}">
+            <img src="${games[index].image}" alt="Game-covers of listed products"></a>
+            <div class="game-info">
+            <h2 class="game-title">${games[index].title}</h2>
+            <p>${games[index].genre}</p>
+            <p>£ ${games[index].price}</p>
+            </div>
+            <button class="buy-now">ADD TO CART</button>
+            </div>`;
+      }
+      document.querySelector("#newReleases").innerHTML = displayNewReleases;
+    }
+  }
   
   getFour();
+  
+  
+  
+  
+  
+  
