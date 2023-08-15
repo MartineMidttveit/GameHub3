@@ -1,0 +1,38 @@
+.container {
+    padding: 5% 0%;
+}
+
+h2 {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.shoppingbag {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(16, 22, 28, 0.95);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 6%;
+}
+
+.shoppingbag .button {
+    align-self: end;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 20px 0px;
+}
+
+input { 
+    width: 35%;
+    height: 42px;
+    padding-left: 12%;
+}
