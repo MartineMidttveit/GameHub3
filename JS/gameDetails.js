@@ -89,12 +89,38 @@ gameDetails.innerHTML =
     <h2 class="orange-subtitle">AGE-LIMIT: <span class="orange-subtitle">${detail.ageRating}</span></h2>
     <p id="ageLimitation"></p>
 
-    <p>Publisher: <span id="publisher">${detail.tags[0]}</span></p>
-    <p>Tags: <span id="devices">#${detail.tags[0]} #${detail.tags[1]}</span></p>
-    <p>Released: <span id="date">${detail.released}</span></p>
-    <p>Genre: <span id="genre">${detail.genre}</span></p>
+    <p><span id="publisher">Publisher:</span> ${detail.tags[0]}</p>
+    <p><span id="devices">Tags: </span>#${detail.tags[0]} #${detail.tags[1]}</p>
+    <p><span id="date">Released: </span>${detail.released}</p>
+    <p><span id="genre">Genre: </span>${detail.genre}</p>
   </div>`
  }
 
 getDetails(api);
+
+
+// RELATED GAMES //
+
+async function getFour () {
+    const loadGames = await fetch("https://api.noroff.dev/api/v1/gamehub"); 
+    const games = await loadGames.json();
+    let displayMostPopular = "";
+  
+    for (let index = 2; index <= 5; index++) { 
+      displayMostPopular+=
+      `<div class="game-container">
+        <a href="/HTML/gameDetails.html?id=${games[index].id}">
+        <img src="${games[index].image}" alt="Game-covers of listed products"></a>
+        <div class="game-info">
+        <h2 class="game-title">${games[index].title}</h2>
+        <p>${games[index].genre}</p>
+        <p>£ ${games[index].price}</p>
+        </div>
+        <button class="buy-now">ADD TO CART</button>
+        </div>`
+      };
+      document.querySelector(".shop-grid").innerHTML = displayMostPopular; 
+    }
+
+getFour ();
 

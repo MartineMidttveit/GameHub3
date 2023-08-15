@@ -1,8 +1,8 @@
 /* TOP PART */ 
 
 .content {
-    background: rgba(16, 22, 28, 0.95);
-    width: 90%;
+    background: linear-gradient(180deg, #0A0E12 0%, rgba(10, 14, 18, 0.00) 100%);
+    width: 80%;
     margin: 4% auto;
     border-radius: 35px;
 }
@@ -120,8 +120,8 @@
   
 .game-desc {
     width: 60%;
-    margin-top: 6%;
-    font-size: 1rem;
+    margin-top: 5%;
+    font-size: 1.1rem;
 }
 
 /* MIDDLE PART */ 
@@ -174,4 +174,11 @@
 
 figcaption {
     padding: 3% 3% 10%;
+}
+
+#publisher,
+#devices,
+#date,
+#genre {
+    font-weight: 600;
 }
