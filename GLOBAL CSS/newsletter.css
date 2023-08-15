@@ -1,0 +1,41 @@
+/* NEWSLETTER */
+  
+#newsletter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: #080B0E;
+    width: 100%;
+    padding: 5% 10%;
+  }
+  
+  .newsletter-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+  }
+  
+  #newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    gap: 2%;
+    margin: 3% 0%;
+  }
+  
+  #email {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    border-radius: 20px;
+    border: none;
+    padding-left: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+  }

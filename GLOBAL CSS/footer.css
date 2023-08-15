@@ -1,0 +1,70 @@
+/* FOOTER */
+  
+footer {
+    color: white;
+    width: 100%;
+    padding: 3% 0%;
+    background-color: #10161C;
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
+    gap: 40px;
+    margin: 0 auto;
+    padding-left: 5%;
+  }
+  
+  .footer-nmbr,
+  .footer-mail {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #contact-information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer-heading {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+  }
+  
+  .footer-p {
+    font-weight: 300;
+    font-size: 15px;
+  }
+  
+  .contact-footer {
+    padding-top: 6%;
+  }
+  
+  .follow-icons {
+    display: flex;
+    gap: 20px;
+    padding-top: 4%;
+  }
+  
+  .follow-btn {
+    font-size: 1.7rem;
+    color: white;
+  }
+  
+  .follow-btn i:hover {
+      transform: rotate(360deg) scale(1.2);
+      transition: .8s;
+  }
+  
+  .footer-heading:hover,
+  .follow-btn:hover,
+  .follow-btn:focus,
+  .footer-heading:focus {
+    color: #FF6509;
+    transition: .2s;
+  }

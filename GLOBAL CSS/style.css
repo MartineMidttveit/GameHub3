@@ -1,0 +1,157 @@
+/* GLOBAL */
+
+html {
+    box-sizing: border-box;
+    background-color: #0a0e12;
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+    
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+    
+  body {
+    max-width: 1600px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e2730;
+}
+
+/* FONTS */
+
+.textbox-h1,
+.info-subtitle {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.textbox-h1,
+.subtitles {
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.textbox-h1 {
+    font-size: 1.6rem;
+}
+
+.subtitles {
+  font-size: 1.3rem;
+  padding: 2%;
+}
+
+.subtitles span {
+  color: #FF6509;
+}
+
+.info-subtitle {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 2% 0%;
+}
+
+.orange-subtitle {
+  color: #FF6509;
+  font-size: 1.3rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/* BUTTONS */
+
+button,
+.button,
+.buyNow,
+.category-btn {
+    border-radius: 50px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    width: 130px;
+    height: 42px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.linear-btn {
+    background: linear-gradient(270deg, #FF6509 0%, #ff5f94 100%);
+}
+
+.buyNow,
+.button {
+    background-color: #FF6509;
+}
+
+.button:hover,
+.buyNow:hover,
+.button:hover {
+    background-color: white;
+}
+
+.scale:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.buy-now {
+    padding: 1%;
+}
+
+#btn-1 {
+    background-color: rgb(255, 96, 96);
+  }
+  
+  #btn-2 {
+    background-color: rgb(91, 255, 91);
+  }
+  
+  #btn-3 {
+    background-color: rgb(79, 79, 255);
+  }
+
+/* SUBTITLES WITH LINES */
+
+.subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5% 0%;
+  }
+    
+  .line-left,
+  .line-right {
+    flex: 1;
+    height: 1px;
+    max-width: 100%;
+  }
+  
+  .line-left {
+    background: linear-gradient(90deg, #F5F5F5 0%, #1E2730 100%);
+  }
+  
+  .line-right {
+    background: linear-gradient(270deg, #F5F5F5 0%, #1E2730 100%);
+  }
+
+/* TEXTBOX ON HERO */
+  
+  .textbox p {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 2% 8%;
+  }

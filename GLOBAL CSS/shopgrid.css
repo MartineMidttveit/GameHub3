@@ -1,0 +1,68 @@
+/*-------------------------------------------------- GAMES NOROFF  --------------------------------------------------*/
+
+.games-noroff,
+.shop-grid {
+    display: grid;
+    gap: 3%;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 380px);
+    margin-bottom: 5%;
+}
+
+.games-noroff {
+    padding: 5% 0% 4%;
+}
+  
+/*-------------------------------------------------- SHOP CONTAINERS  --------------------------------------------------*/
+
+.game-container {
+    border-radius: 30px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10% 0%;
+    background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0.31) 100%); 
+    display: flex;
+    flex-direction: column;
+}
+
+.buy-now {
+    opacity: 0;
+}
+
+.game-container:hover .buy-now {
+    opacity: 1;
+}
+
+/*-------------------------------------------------- GAMES --------------------------------------------------*/
+  
+.game-container img {
+    height: 100%;
+    width: 120px;
+    object-fit: cover;
+  }
+
+  .game-info {
+    line-height: 1.7;
+    margin: 0;
+    padding: 5% 0%;
+  }
+
+  .game-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 8px;
+    margin: 0;
+    font-size: 1.1rem;
+  }
+  
+  .shop-grid p {
+    font-weight: 400;
+    text-align: center;
+    color: rgb(223, 223, 223);
+  }

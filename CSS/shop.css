@@ -1,0 +1,165 @@
+/*-------------------------------------------------- Hero --------------------------------------------------*/
+
+.background {
+    background-image: url(/IMAGES/Shop/carsss.png);
+    background-size: cover;
+    height: 600px;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.textbox {
+    padding: 20px;
+    color: white;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: clamp(350px, 50%, 520px);
+    flex-direction: column;
+    border-radius: 40px 0px 0px 40px;
+    background: linear-gradient(180deg, rgba(16, 22, 28, 0.50) 0%, #10161C 100%);
+    margin-bottom: 4%;
+}
+
+/*-------------------------------------------------- Sort by --------------------------------------------------*/
+
+.nav-line {
+    height: 72px;
+    background-color: #0a0d11;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 10%;
+}
+
+.sort-by,
+.sort-by span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sort-by {
+    gap: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    height: 100%;
+}
+
+.sort-by span {
+    background-color: white;
+    color: #000000;
+    height: 100%;
+    width: 190px;
+}
+
+.best-match {
+    color: black;
+    background-color: white;
+    position: relative;
+    margin-right: 82px;
+}
+
+#filter {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+} 
+
+#filter:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+/*-------------------------------------------------- BOTTOM SECTION --------------------------------------------------*/
+
+.bottom-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 5%;
+}
+
+.bottom-text p span {
+    font-weight: 600;
+    color: #FF6509;
+}
+
+.page-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3%;
+    margin: 0 auto;
+}
+
+#arrow-right,
+#arrow-left {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.page {
+    text-decoration: none;
+    color: white;
+}
+
+#page-selected {
+    color: #FF6509;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/*-------------------------------------------------- CARDS --------------------------------------------------*/
+
+#btn-4 {
+    background-color: rgb(255, 70, 255);
+}
+
+#btn-5 {
+    background-color: rgb(255, 120, 71);
+}
+
+#btn-6 {
+    background-color: rgb(228, 255, 95);
+}
+
+/*-------------------------------------------------- LOADER --------------------------------------------------*/
+
+.loading-container {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #FF6509;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*-------------------------------------------------- MEDIA QUERIES --------------------------------------------------*/
