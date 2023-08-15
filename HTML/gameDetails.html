@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy the latest game from Call of Duty with GameHub">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/GLOBAL CSS/style.css">
+    <link rel="stylesheet" href="/GLOBAL CSS/shopgrid.css">
+    <link rel="stylesheet" href="/GLOBAL CSS/header.css">
+    <link rel="stylesheet" href="/GLOBAL CSS/footer.css">
+    <link rel="stylesheet" href="/GLOBAL CSS/cards.css">
+    <link rel="stylesheet" href="/CSS/gameDetails.css">
+
+    <title>GameHub |</title>
+  </head>
+  <body>
+
+<!--HEADER-->
+
+<header>
+  <div class="header-content">
+      <nav class="header-nav">
+          <a id="logo" href="/index.html">GAME<span>HUB</span>
+          <p>The universe of games</p></a>
+      </nav>
+    
+      <nav class="navigate">
+          <a class="top-nav" href="#" aria-label="profile"><i class="fa-regular fa-user icon"></i></a>
+          <a class="top-nav" href="#" aria-label="favorites"><i class="fa-regular fa-heart icon"></i></a>
+
+          <div class="cart">
+          <a class="top-nav" href="/HTML/shoppingbag.html" aria-label="shoppingbag">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p id="count">0</p>
+          </a>
+          </div>
+      </nav>
+  </div>
+</header>  
+
+<!--NAVBAR--> 
+
+<div class="navigation">
+  <div class="search-bar">
+      <form id="search-form">
+          <input class="searching" type="text" placeholder="Search for games..." aria-label="search for games">
+      </form>
+  </div>
+    
+  <input type="checkbox" id="menu-checkbox">
+  <label for="menu-checkbox" class="hamburger-icon" aria-label="hamburger menu"><i class="fas fa-bars"></i></label>
+    
+  <nav class="nav-header">
+      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link" href="/HTML/shop.html">Shop</a>
+      <a class="nav-link" href="#">Sell</a>
+      <a class="nav-link" href="/HTML/contact.html">Contact</a>
+      <a class="nav-link" href="/HTML/about.html">About</a>
+  </nav>
+</div>
+
+<!--PING PONG -->
+
+<section class="content">
+    <div class="game-box"></div>
+
+    <nav class="game-nav">
+        <p><span class="active">DETAILS</span></p>
+        <p>REVIEWS</p>
+        <p>GALLERY</p>
+    </nav>
+
+    <div class="game-details"></div>
+</section>
+
+<script src="/JS/gameDetails.js"></script>
+
+<!--FOOTER-->
+  
+<footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <a class="footer-heading" href="/HTML/contact.html">CONTACT</a>
+        <p class="footer-p">Contact us</p>
+        <p class="footer-p">Support</p>
+        <p class="footer-p">FAQ</p>
+  
+        <div class="contact-footer">
+          <div class="footer-nmbr">
+            <span class="contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <span class="footer-p">+47 552 24 356</span>
+          </div>
+  
+          <div class="footer-mail">
+            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <span class="footer-p">gamehub@customersupport.com</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="footer-info">
+        <a class="footer-heading" href="/HTML/about.html">ABOUT</a>
+        <p class="footer-p">About</p>
+        <p class="footer-p">Our culture</p>
+        <p class="footer-p">Careers</p>
+      </div>
+  
+      <div class="footer-info">
+        <p class="footer-heading">TERMS & PRIVACY</p>
+        <p class="footer-p">Privacy Policy</p>
+        <p class="footer-p">Terms & Conditions</p>
+        <p class="footer-p">Cookie Policy</p>
+      </div>
+  
+      <div class="footer-info">
+        <p class="footer-heading">FOLLOW US</p>
+          <div class="follow-icons">
+            <a class="follow-btn" href="#" aria-label="instagram button"><i class="fa-brands fa-instagram"></i></a>
+            <a class="follow-btn" href="#" aria-label="facebook button"><i class="fa-brands fa-facebook"></i></a>
+            <a class="follow-btn" href="#" aria-label="linkedin button"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>
