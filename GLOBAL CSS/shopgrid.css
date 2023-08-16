@@ -15,7 +15,7 @@
 }
 
 #newReleases {
-  margin-bottom: 5%;
+  margin-bottom: 15%;
 }
   
 /*-------------------------------------------------- SHOP CONTAINERS  --------------------------------------------------*/
@@ -107,7 +107,7 @@
     }
 
     .shop-grid {
-      padding: 8% 0% 10%;
+      padding-bottom: 10%;
       gap: 2.2rem;
     }
 

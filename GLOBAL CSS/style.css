@@ -157,3 +157,11 @@ button,
   text-align: center;
   padding: 2% 8%;
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .subtitle {
+    margin: 10% 0%;
+  }
+}
