@@ -152,8 +152,8 @@ button,
 
 /* TEXTBOX ON HERO */
   
-  .textbox p {
-    font-size: 1.1rem;
-    text-align: center;
-    padding: 2% 8%;
-  }
+.textbox p {
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 2% 8%;
+}

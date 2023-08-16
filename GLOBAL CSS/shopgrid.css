@@ -3,12 +3,11 @@
 .games-noroff,
 .shop-grid {
     display: grid;
-    gap: 3%;
+    gap: 2rem;
     width: 80%;
     margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(auto, 380px);
-    margin-bottom: 5%;
 }
 
 .games-noroff {
@@ -44,6 +43,7 @@
     height: 100%;
     width: 120px;
     object-fit: cover;
+    border-radius: 6px;
   }
 
   .game-info {
@@ -65,4 +65,54 @@
     font-weight: 400;
     text-align: center;
     color: rgb(223, 223, 223);
+  }
+
+  /* MEDIA QUERIES IPAD */
+
+  @media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .shop-grid,
+    .games-noroff {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .shop-grid {
+      padding: 4% 0% 8%;
+      gap: 2rem;
+    }
+
+    .games-noroff {
+      padding: 6% 0% 8%;
+      gap: 1.8rem;
+    }
+
+    .game-container img {
+      width: 140px;
+    }
+
+    .buy-now {
+      opacity: 1;
+    }
+  }
+
+  /* MEDIA QUERIES MOBILE */
+
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .shop-grid,
+    .games-noroff {
+      grid-template-columns: 1fr;
+    }
+
+    .shop-grid {
+      padding: 8% 0% 10%;
+      gap: 2.2rem;
+    }
+
+    .games-noroff {
+      padding: 12% 0% 15%;
+      gap: 1.6rem;
+    }
+
+    .buy-now {
+      opacity: 1;
+    }
   }

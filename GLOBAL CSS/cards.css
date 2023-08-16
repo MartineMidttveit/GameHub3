@@ -74,3 +74,53 @@
     padding-bottom: 15%;
     width: 85%;
   }
+
+  @media only screen and (min-width: 0px) and (max-width: 1180px) {
+
+    .card:before,
+    .card .info {
+      opacity: 1;
+    }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .wrapper {
+      padding: 4% 0% 12%;
+      gap: 40px;
+    }
+
+    .card {
+      height: 350px;
+    }
+
+    .card img {
+      object-position: 30% 100%;
+    }
+
+    .info {
+      padding-bottom: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .wrapper {
+      grid-template-columns: 1fr;
+      padding: 10% 5% 20%;
+      margin: 0 auto;
+    }
+
+    .card {
+      height: 200px;
+    }
+
+    .info {
+      padding-bottom: 20%;
+    }
+
+    .card img {
+      object-position: center;
+    }
+  }
