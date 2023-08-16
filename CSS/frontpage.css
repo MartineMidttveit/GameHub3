@@ -190,7 +190,20 @@
 
     .release-1,
     .release-2 {
-      height: 320px;
+      height: 350px;
+    }
+
+    figcaption {
+      height: 155px;
+      display: flex;
+      align-items: center;
+      justify-content: top;
+      flex-direction: column;
+      padding-top: 6%;
+    }
+
+    .absolute {
+      right: 27%;
     }
   }
 
