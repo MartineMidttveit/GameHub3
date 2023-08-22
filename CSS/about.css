@@ -1,63 +1,172 @@
-.container {
-    position: relative;
+/*---------------------------------------------------- ABOUT DESKTOP ----------------------------------------------------*/
+
+#user-experience {
+  margin-top: 2%;
+}
+
+#user-experience,
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  flex: 1 1 100px;
+}
+
+.container1,
+.container2,
+.container3 {
+  background: linear-gradient(0deg, #0A0E12 0%, #1B242D 100%);
+  padding: 0px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 440px;
+}
+
+.about-text {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 2;
+}
+
+.subtitles {
+  font-size: 1.6rem;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.container1 {
+  border-radius: 70px 0px 0px 70px;
+  width: 40%;
+}
+
+.container2 {
+  border-radius: 0px 70px 70px 0px;
+  width: 35%;
+}
+
+.container3 {
+  border-radius: 70px 0px 0px 70px;
+  width: 40%;
+}
+
+.About1,
+.About2,
+.About3 {
+  height: 440px;
+  object-fit: cover;
+}
+
+.About1,
+.About3 {
+  width: 35%;
+  border-radius: 0px 70px 70px 0px;
+}
+
+.About2 {
+  width: 40%;
+  border-radius: 70px 0px 0px 70px;
+}
+
+#bottom-section {
+  margin-bottom: 4%;
+}
+
+/*-------------------------MEDIA QUIERIES MOBILE ---------------------------*/
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #user-experience,
+  .section {
+    margin-top: 10px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 700px;
-    width: 100%;
+    flex-direction: column;
+    padding: 10px 0px;
   }
-  
-  .container img {
-    height: 100%;
-    width: 100%;
+
+  .About1,
+  .About2,
+  .About3 {
+    width: 90%;
     object-fit: cover;
-    object-position: center;
+    border-radius: 15px;
+    height: 300px;
   }
-  
+
+  .About1,
+  .About3 {
+    order: 1;
+  }
+
+  .container1,
+  .container2,
+  .container3 {
+    width: 90%;
+    border-radius: 15px;
+    padding: 40px 30px;
+    height: auto;
+  }
+
+  .container1,
+  .container3 {
+    order: 2;
+  }
+
+  .about-headlines {
+    font-size: 24px;
+  }
+
   .about-text {
-    height: 100%;
+    font-size: 14px;
+  }
+}
+
+/*-------------------------MEDIA QUIERIES IPAD ---------------------------*/
+
+@media only screen and (min-width: 1080px) and (max-width: 1398px) {
+  #user-experience {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+  #user-experience,
+  .section {
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: absolute;
-    bottom: 0; 
-    text-align: center;
-    color: white;
-    padding: 4% 20%;
-    background: linear-gradient(360deg, #090C10 30%, rgba(9, 12, 16, 0.00) 100%);
+    padding: 10px 0px;
   }
-  
-  .about-grid {
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    padding: 4% 0%;
+
+  .About1,
+  .About2,
+  .About3 {
+    width: 38%;
+    object-fit: cover;
+    height: 400px;
   }
-  
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 8%;
-    font-size: 1rem;
+
+  .container1,
+  .container2,
+  .container3 {
+    width: 90%;
+    padding: 40px 30px;
+    height: 400px;
   }
-  
-  .icons {
-    font-size: 2rem;
+
+  .about-headlines {
+    font-size: 26px;
   }
+
+  .about-text {
+    font-size: 16px;
+  }
+}
   
   /* MEDIA QUERIES */
   
-  @media only screen and (min-width: 0px) and (max-width: 1180px) {
-  
-    .about-grid {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, fit-content);
-    }
-  }
+  @media only screen and (min-width: 0px) and (max-width: 1180px) {}
   
   @media only screen and (min-width: 767px) and (max-width: 1180px) {
   
@@ -67,18 +176,6 @@
   
     .about-text {
         padding: 4% 10%;
-    }
-  
-    .about-grid {
-      padding: 6% 0%;
-    }
-  
-    .grid-container {
-      padding: 4% 20%;
-    }
-  
-    .icon {
-      font-size: 1.8rem;
     }
     }
     
@@ -92,14 +189,6 @@
           padding: 10% 10% 12%;
           position: unset;
           background: linear-gradient(180deg, #090C10 70%, rgba(9, 12, 16, 0.00) 100%);
-        }
-  
-        .bottom-section {
-          padding-bottom: 6%;
-        }
-  
-        .icon {
-          font-size: 1.6rem;
         }
   
     }
