@@ -69,11 +69,13 @@ header {
     background-color: #FF6509;
     height: 20px;
     width: 20px;
-    text-align: center;
     font-size: .8rem;
     position: absolute;
     top: -8px;
     right: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /* NAVIGATIONBAR */
@@ -131,6 +133,10 @@ header {
     color: #FF6509;
     transition: 0.3s;
     transform: scale(1.1);
+  }
+
+  .mobile {
+    display: none;
   }
   
   .icon:hover,
@@ -190,9 +196,6 @@ header {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
-  header {
-    padding: 5% 0% 2%;
-  }
 
   .hamburger-menu {
     display: block;
@@ -216,9 +219,25 @@ header {
     text-align: center;
     padding: 4% 0%;
   }
+
+  .mobile {
+    display: block;
+  }
+
+  #profile,
+  #favorite {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+  header {
+    padding: 8% 0% 5%;
+  }
+  
+  .header-content {
+    align-items: end;
+  }
 
   #logo {
     font-size: 1.7rem;
@@ -228,12 +247,26 @@ header {
     font-size: .9rem;
   }
 
+  .top-nav {
+    font-size: 1.15rem;
+    padding-bottom: 8%;
+  }
+
+  #count {
+    top: -10px;
+    right: -2px;
+  }
+
   .nav-header.show {
-    top: 154px;
+    top: 177px;
   }
 
   .search-bar {
-    width: 80%;
+    width: 90%;
+  }
+
+  .search-bar input {
+    padding-left: 5%;
   }
 
   .hamburger-icon {
@@ -260,6 +293,9 @@ header {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1180px) {
+  header {
+    padding: 5% 0% 2%;
+  }
 
   #logo {
     font-size: 2rem;
