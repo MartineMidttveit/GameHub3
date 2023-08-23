@@ -177,7 +177,7 @@
     right: 10%;
   }
   
-  /*-------------------------------------------------- MEDIA QUERIES --------------------------------------------------*/
+  /* MEDIA QUERIES MOBILE */
     
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .comingSoon {
@@ -205,87 +205,15 @@
     .absolute {
       right: 27%;
     }
+
+    .informational {
+      flex-direction: column;
+    }
   }
 
+  /* MEDIA QUERIES IPAD */
+  /* MEDIA QUERIES LAPTOP */
+      
 
-  /* OLD MEDIA QUIERIES */
-      
-  @media only screen and (min-width: 768px) and (max-width: 1180px) {
-  
-    .info-container {
-      flex-direction: column;
-      gap: 40px;
-      padding: 6% 0%;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .slideshow {
-      order: 2;
-      width: 90%;
-    }
-  
-    .slide {
-      height: 260px;
-    }
-  
-    .text-box {
-      width: 50%;
-      order: 1;
-    }
-  }
-      
-  @media only screen and (min-width: 0px) and (max-width: 767px) {
-  
-    .slideshow-container {
-      height: 440px;
-    }
-  
-    .textbox {
-      height: 220px;
-      bottom: 0;
-      width: 100%;
-      border-radius: 20px 20px 0px 0px;
-    }
-  
-    .textbox-h1 {
-      font-size: 1.3rem;
-    }
-  
-    .textbox-p {
-      font-size: 1rem;
-      padding: 2.5%;
-    }
-  
-    .slideshow {
-      width: 80%;
-      order: 2;
-    }
-  
-    .info-container {
-      flex-direction: column;
-      gap: 40px;
-      padding: 10% 0%;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .slide {
-      height: 260px;
-    }
-  
-    .text-box {
-      width: 80%;
-      order: 1;
-    }
-  
-    .text-box p {
-      padding: 3%;
-    }
-  
-    .footer-heading {
-      font-size: .9rem;
-    }
-  }
   
   
