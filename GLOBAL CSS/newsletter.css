@@ -38,4 +38,53 @@
     padding-left: 5%;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+}
+
+/* MEDIA QUERIES MOBILE & IPAD */
+
+@media only screen and (min-width: 0px) and (max-width: 1180px) {
+  .newsletter-text {
+    width: 100%;
   }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    
+    #newsletter-container {
+      padding: 10%;
+    }
+
+    .info-subtitle {
+      padding-bottom: 3%;
+    }
+
+    .newsletter-text {
+      font-size: .8rem;
+    }
+
+    #newsletter {
+      flex-direction: column;
+      height: fit-content;
+      gap: 1rem;
+    }
+
+    #email {
+      height: 42px;
+      width: 100%;
+    }
+
+    #email::placeholder {
+      font-size: .8rem;
+      padding-left: 6%;
+    }
+  }
+
+/* MEDIA QUERIES IPAD */
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  #newsletter-container {
+    padding: 8% 17%;
+  }
+}

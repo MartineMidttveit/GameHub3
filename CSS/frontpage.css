@@ -114,7 +114,6 @@
   }
   
   .info-text p {
-    font-size: 1.1rem;
     text-align: center;
   }
   
@@ -166,11 +165,6 @@
     margin: 0;
   }
   
-  figcaption h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-  }
-  
   .absolute {
     position: absolute;
     bottom: 8%;
@@ -183,17 +177,20 @@
   .informational {
     flex-direction: column;
   }
+
+  .comingSoon {
+    flex-direction: column;
+    height: fit-content;
+    gap: 1.5rem;
+  }
 }
 
 /* MEDIA QUERIES MOBILE */
     
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+
   .comingSoon {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin: 5% 0%;
-    height: fit-content;
+    padding: 5% 10%;
   }
 
   .release-1,
@@ -202,7 +199,7 @@
   }
 
   figcaption {
-    height: 155px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: top;
@@ -210,12 +207,34 @@
     padding-top: 6%;
   }
 
+  figcaption .button {
+    margin-top: 5%;
+  }
+
   .absolute {
     right: 27%;
+    bottom: 20px;
   }
 }
 
   /* MEDIA QUERIES IPAD */
+
+@media only screen and (min-width: 768px) and (max-width: 1180px) {
+  .comingSoon {
+    padding: 5% 10%;
+  }
+
+  .release-1,
+  .release-2 {
+    height: 360px;
+  }
+
+  .release-1 img,
+  .release-2 img {
+    height: 100%;
+  }
+}
+
   /* MEDIA QUERIES LAPTOP */
       
 

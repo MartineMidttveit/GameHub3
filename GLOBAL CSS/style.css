@@ -69,6 +69,11 @@ p {
   font-weight: 400;
 }
 
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
 /* BUTTONS */
 
 button,
@@ -165,4 +170,25 @@ button,
   .subtitle {
     margin: 10% 0%;
   }
+
+  button,
+  .button,
+  .buyNow,
+  .category-btn {
+    width: 115px;
+    height: 38px;
+    font-size: .9rem;
+}
+
+p {
+  font-size: .94rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.info-subtitle {
+  font-size: 1.2rem;
+}
 }
