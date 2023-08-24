@@ -9,13 +9,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px 0px;
-  flex: 1 1 100px;
+  padding: 2% 0%;
 }
 
-.container1,
-.container2,
-.container3 {
+.containers {
   background: linear-gradient(0deg, #0A0E12 0%, #1B242D 100%);
   padding: 0px 60px;
   display: flex;
@@ -38,35 +35,29 @@
   letter-spacing: 3px;
 }
 
-.container1 {
+#container1,
+#container3 {
   border-radius: 70px 0px 0px 70px;
   width: 40%;
 }
 
-.container2 {
+#container2 {
   border-radius: 0px 70px 70px 0px;
   width: 35%;
 }
 
-.container3 {
-  border-radius: 70px 0px 0px 70px;
-  width: 40%;
-}
-
-.About1,
-.About2,
-.About3 {
+.about-img {
   height: 440px;
   object-fit: cover;
 }
 
-.About1,
-.About3 {
+#img-1,
+#img-3 {
   width: 35%;
   border-radius: 0px 70px 70px 0px;
 }
 
-.About2 {
+#img-2 {
   width: 40%;
   border-radius: 70px 0px 0px 70px;
 }
@@ -82,17 +73,17 @@
     flex-direction: column;
   }
 
-  .container1,
-  .container2,
-  .container3 {
+  #container1,
+  #container2,
+  #container3 {
     background: linear-gradient(180deg, #0A0E12 0%, #1B242D 100%);
     border-radius: 0px 0px 70px 70px;
     order: 2;
   }
 
-  .About1,
-  .About2,
-  .About3 {
+  #img-1,
+  #img-2,
+  #img-3 {
     border-radius: 70px 70px 0px 0px;
   }
 }
@@ -106,25 +97,21 @@
   }
 
   .section {
-    padding: 0;
-    padding-bottom: 10%;
+    padding: 8% 0%;
   }
 
-  .container1,
-  .container2,
-  .container3 {
+  #container1,
+  #container2,
+  #container3 {
     width: 90%;
     padding: 10% 7%;
     height: fit-content;
   }
 
-  .section img {
+  #img-1,
+  #img-2,
+  #img-3 {
     width: 90%;
-  }
-
-  .About1,
-  .About2,
-  .About3 {
     height: 300px;
   }
 
@@ -135,19 +122,28 @@
   .subtitles {
     font-size: 1.3rem;
   }
+
+  #bottom-section {
+    padding: 0;
+    margin-bottom: 10%;
+  }
 }
 
 /*-------------------------MEDIA QUIERIES IPAD ---------------------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
-  .container1,
-  .container2,
-  .container3,
-  .About1,
-  .About2,
-  .About3 {
+  #container1,
+  #container2,
+  #container3,
+  #img-1,
+  #img-2,
+  #img-3 {
     width: 80%;
   } 
+
+  .about-img {
+    height: 350px;
+  }
 }
   
  
