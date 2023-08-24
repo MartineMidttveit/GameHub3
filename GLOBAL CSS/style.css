@@ -180,7 +180,8 @@ button,
     font-size: .9rem;
 }
 
-p {
+p,
+.textbox p {
   font-size: .94rem;
 }
 
@@ -190,5 +191,9 @@ h3 {
 
 .info-subtitle {
   font-size: 1.2rem;
+}
+
+.textbox-h1 {
+  font-size: 1.4rem;
 }
 }

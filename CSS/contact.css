@@ -184,7 +184,7 @@ textarea {
     }
 
     .container {
-        height: 350px;
+        height: 400px;
         background-image: url(/IMAGES/contact-mob.png);
         background-size: cover;
         background-position: top;
@@ -206,7 +206,7 @@ textarea {
 
     .contact-line {
         font-size: .9rem;
-        padding: 5% 0%;
+        padding: 7% 0% 10%;
     }
 
     details {
@@ -214,7 +214,7 @@ textarea {
     }
 
     .giftcard-mob {
-        margin-bottom: 15%;
+        margin-bottom: 5%;
     }
     }
 

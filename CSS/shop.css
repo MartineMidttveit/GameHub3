@@ -169,3 +169,18 @@
         padding-bottom: 5%;
     }
   }
+
+  @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .bottom-text {
+        padding-bottom: 10%;
+        gap: 1.2rem;
+    }
+
+    .page-nav {
+        gap: 2rem;
+    }
+
+    .sort-by {
+        display: none;
+    }
+  }
