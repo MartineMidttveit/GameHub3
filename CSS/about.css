@@ -42,12 +42,15 @@
 }
 
 #container1,
-#container3 {
+#container3,
+#img-2 {
   border-radius: 70px 0px 0px 70px;
   width: 40%;
 }
 
-#container2 {
+#container2,
+#img-1,
+#img-3 {
   border-radius: 0px 70px 70px 0px;
   width: 35%;
 }
@@ -55,17 +58,6 @@
 .about-img {
   height: 440px;
   object-fit: cover;
-}
-
-#img-1,
-#img-3 {
-  width: 35%;
-  border-radius: 0px 70px 70px 0px;
-}
-
-#img-2 {
-  width: 40%;
-  border-radius: 70px 0px 0px 70px;
 }
 
 #bottom-section {
