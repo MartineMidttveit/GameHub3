@@ -5,19 +5,21 @@
 }
 
 #user-experience,
-.section {
+.section, 
+.containers {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#user-experience,
+.section {
   padding: 2% 0%;
 }
 
 .containers {
   background: linear-gradient(0deg, #0A0E12 0%, #1B242D 100%);
   padding: 0px 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 440px;
 }
