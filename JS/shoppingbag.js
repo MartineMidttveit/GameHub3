@@ -1,15 +1,17 @@
-const gameContainer = document.querySelector(".shoppingbag");
+const gameContainer = document.querySelector('.shoppingbag')
 
-const queryString = document.location.search;
-const params = new URLSearchParams(queryString);
-const id = params.get("id");
+const queryString = document.location.search
+const params = new URLSearchParams(queryString)
+const id = params.get('id')
 
-const url = `https://api.noroff.dev/api/v1/gamehub/${id}`;
-async function getGames(url) {
-    const response = await fetch(url);
-    const game = await response.json();
+const url = `https://api.noroff.dev/api/v1/gamehub/${id}`
+async function getGames (url) {
+  if (id) {
+    try {
+      const response = await fetch(url)
+      const game = await response.json()
 
-    gameContainer.innerHTML+=
+      gameContainer.innerHTML +=
     `<h1 class="subtitles">SHOPPINGBAG</h1>
     <div class="grid">
             <div class="column">
@@ -36,6 +38,13 @@ async function getGames(url) {
             </div> 
     </div>
     <button class="button scale">PAYMENT</button>`
+    } catch (error) {
+      throw new Error('Error to load games in the shopping bag: ' + error.message)
+    }
+  } else {
+    gameContainer.innerHTML +=
+    `<h1 class="subtitles">SHOPPINGBAG</h1>`
+  }
 }
 
-getGames(url);
+getGames(url)

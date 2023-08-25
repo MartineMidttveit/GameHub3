@@ -118,7 +118,7 @@ async function getFour () {
         <p>${games[index].genre}</p>
         <p>£ ${games[index].price}</p>
         </div>
-        <a href="/HTML/shoppingbag.html?id=${games.id}" class="underline">
+        <a href="/HTML/shoppingbag.html?id=${games[index].id}" class="underline">
             <button class="buy-now">ADD TO CART</button>
         </a>
         </div>`
