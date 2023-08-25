@@ -95,6 +95,10 @@ button,
     font-size: 1rem;
 }
 
+.underline {
+  text-decoration: none;
+}
+
 .linear-btn {
     background: linear-gradient(270deg, #FF6509 0%, #ff5f94 100%);
 }

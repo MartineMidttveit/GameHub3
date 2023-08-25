@@ -54,7 +54,9 @@ async function getGames(url) {
                 </form>
               </div>
 
-    <button class="buyNow linear-btn scale">ADD TO CART</button>
+              <a href="/HTML/shoppingbag.html?id=${game.id}" class="underline">
+                    <button class="buyNow linear-btn scale">ADD TO CART</button>
+              </a>
     <div class="game-desc">
     <p id="cod-description">${game.description}</p>
     </div>
@@ -116,7 +118,9 @@ async function getFour () {
         <p>${games[index].genre}</p>
         <p>£ ${games[index].price}</p>
         </div>
-        <button class="buy-now">ADD TO CART</button>
+        <a href="/HTML/shoppingbag.html?id=${games.id}" class="underline">
+            <button class="buy-now">ADD TO CART</button>
+        </a>
         </div>`
       };
       document.querySelector(".shop-grid").innerHTML = displayMostPopular; 
