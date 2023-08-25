@@ -27,7 +27,7 @@ h2 {
 .grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 300px auto;
+    grid-template-rows: auto;
     gap: 20px 0px;
 }
 
@@ -40,5 +40,10 @@ input {
 .product-image img {
     height: 80%;
     width: 80%;
-    border-radius: 8px;
+    border-radius: 6px;
+}
+
+.column {
+    display: flex;
+    align-items: center;
 }
