@@ -1,3 +1,6 @@
+import fetchGames from "./fetchGame.js";
+const games = await fetchGames();
+
 // GAME-DETAILS //
 
 const gameContainer = document.querySelector(".game-box");
