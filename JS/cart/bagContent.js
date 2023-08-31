@@ -24,7 +24,6 @@ export default function bagContent(game) {
     <div class="column">
         <i class="fa-solid fa-xmark" id="remove"></i>
     </div>`
-        
 };
 
 
