@@ -3,6 +3,7 @@ console.log("test")
 import fetchGames from "./fetchGame.js";
 import showSlides from "./showSlides.js";
 import getFour from "./getFour/getFour.js";
+import addToCart from "./cart/addToCart.js";
 
 const games = await fetchGames();
 

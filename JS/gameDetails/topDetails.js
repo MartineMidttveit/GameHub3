@@ -45,7 +45,7 @@ export default function topDetails(game) {
               </div>
 
               <a href="/HTML/shoppingbag.html?id=${game.id}" class="underline">
-                    <button class="buyNow linear-btn scale">ADD TO CART</button>
+                    <button class="buy-now linear-btn scale">ADD TO CART</button>
               </a>
     <div class="game-desc">
     <p id="cod-description">${game.description}</p>

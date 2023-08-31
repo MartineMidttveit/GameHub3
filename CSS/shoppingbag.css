@@ -3,9 +3,9 @@
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .shoppingbag {
@@ -18,6 +18,10 @@ h2 {
     padding: 3% 6%;
 }
 
+.shoppingbag .subtitles {
+    font-size: 1.8rem;
+}
+
 .shoppingbag .button {
     align-self: end;
     margin-right: 10%;
@@ -28,7 +32,8 @@ h2 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
-    gap: 20px 0px;
+    gap: 50px 0px;
+    margin-top: 5%;
 }
 
 input { 
@@ -46,4 +51,15 @@ input {
 .column {
     display: flex;
     align-items: center;
+}
+
+#remove {
+    background-color: #FF6509;
+    border-radius: 50px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
