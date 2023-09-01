@@ -1,16 +1,13 @@
 import buyNowBtn from "./cart/buyNowBtn.js";
 import fetchGames from "./fetchGame.js";
 
-async function getGames() {
+  const games = await fetchGames()
+
   const queryString = document.location.search;
   const params = new URLSearchParams(queryString);
   const genre = params.get('genre');
 
-  try {
-      const loadGames = await fetch('https://api.noroff.dev/api/v1/gamehub');
-      const games = await loadGames.json();
-
-      let display = '';
+  let display = '';
 
       games.forEach((game) => {
           if (!genre || game.genre === genre) {
@@ -31,10 +28,6 @@ async function getGames() {
       });
 
       document.querySelector('.games-noroff').innerHTML = display;
-  } catch (error) {
-      throw new Error('Error fetching game data: ' + error.message);
-  }
-}
 
-getGames();
-buyNowBtn()
+      buyNowBtn()
+
