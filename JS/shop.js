@@ -1,8 +1,16 @@
 import buyNowBtn from "./cart/buyNowBtn.js";
 import fetchGames from "./fetchGame.js";
+import errorBox from "./errorBox.js";
+
+const gamesContainer = document.querySelector('.games-noroff')
 
   const games = await fetchGames()
 
+  if (games.errors) {
+    gamesContainer.innerHTML = errorBox(games)
+  }
+
+  else {
   const queryString = document.location.search;
   const params = new URLSearchParams(queryString);
   const genre = params.get('genre');
@@ -27,7 +35,8 @@ import fetchGames from "./fetchGame.js";
           }
       });
 
-      document.querySelector('.games-noroff').innerHTML = display;
+      gamesContainer.innerHTML = display;
 
       buyNowBtn()
 
+    }
