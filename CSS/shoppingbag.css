@@ -48,6 +48,17 @@ input {
     align-items: center;
 }
 
+#remove {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(105, 105, 105);
+    color: rgb(252, 252, 252);
+    border-radius: 50px;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 1080px) {
     .grid-wrapper {
         overflow: auto;
