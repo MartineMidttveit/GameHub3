@@ -168,13 +168,23 @@ textarea {
     
     @media only screen and (min-width: 768px) and (max-width: 1180px) {
   
-    .contact-form {
-        width: 55%;
-    }
+        .contact-form {
+            width: 55%;
+        }
 
-    #contact-info {
-        width: 75%;
-    }
+        #contact-info {
+            width: 75%;
+        }
+
+        .mobile-version {
+            padding-left: 36px;
+            padding-right: 36px;
+        }
+
+        .mobile-version .contact-form {
+            width: 100%;
+        }
+        
     }
     
   @media only screen and (min-width: 0px) and (max-width: 767px) {

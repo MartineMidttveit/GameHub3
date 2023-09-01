@@ -176,6 +176,7 @@
 @media only screen and (min-width: 0px) and (max-width: 1180px) {
   .informational {
     flex-direction: column;
+    height: fit-content;
   }
 
   .comingSoon {
@@ -215,6 +216,20 @@
     right: 27%;
     bottom: 20px;
   }
+
+  .slideshow-container {
+    height: 400px;
+  }
+  
+  .slideshow-container img {
+    max-height: 400px;
+  }
+
+  .slideshow-container .img .textbox {
+    transform: translateY(-50%);
+    width: calc(100% - 16px);
+    max-width: 450px;
+  }
 }
 
   /* MEDIA QUERIES IPAD */
@@ -232,6 +247,20 @@
   .release-1 img,
   .release-2 img {
     height: 100%;
+  }
+
+  .slideshow-container {
+    height: 550px;
+  }
+  
+  .slideshow-container img {
+    max-height: 550px;
+  }
+
+  .slideshow-container .img .textbox {
+    transform: translateY(-50%);
+    width: calc(100% - 16px);
+    max-width: 450px;
   }
 }
 
