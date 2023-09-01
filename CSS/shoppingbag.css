@@ -5,7 +5,7 @@
 h2 {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .shoppingbag {
@@ -16,6 +16,10 @@ h2 {
     display: flex;
     flex-direction: column;
     padding: 3% 6%;
+}
+
+.shoppingbag .subtitles {
+    font-size: 1.6rem;
 }
 
 .shoppingbag .button {
@@ -43,9 +47,11 @@ input {
     border-radius: 6px;
 }
 
-.column {
+.column,
+.column > * {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #remove {
