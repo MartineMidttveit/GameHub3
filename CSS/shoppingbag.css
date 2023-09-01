@@ -54,7 +54,7 @@ input {
     justify-content: center;
 }
 
-#remove {
+.remove {
     height: 45px;
     width: 45px;
     display: flex;
@@ -63,6 +63,7 @@ input {
     background-color: rgb(105, 105, 105);
     color: rgb(252, 252, 252);
     border-radius: 50px;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1080px) {

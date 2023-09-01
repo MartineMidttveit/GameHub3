@@ -124,6 +124,10 @@
     font-size: 1.1rem;
 }
 
+.buy-now {
+    opacity: 1;
+}
+
 /* MIDDLE PART */ 
 
 .game-nav {

@@ -1,3 +1,6 @@
+import buyNowBtn from "./cart/buyNowBtn.js";
+import fetchGames from "./fetchGame.js";
+
 async function getGames() {
   const queryString = document.location.search;
   const params = new URLSearchParams(queryString);
@@ -34,3 +37,4 @@ async function getGames() {
 }
 
 getGames();
+buyNowBtn()

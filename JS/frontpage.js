@@ -1,9 +1,8 @@
-console.log("test")
-
 import fetchGames from "./fetchGame.js";
 import showSlides from "./showSlides.js";
 import getFour from "./getFour/getFour.js";
-import addToCart from "./cart/addToCart.js";
+import buyNowBtn from "./cart/buyNowBtn.js";
+
 
 const games = await fetchGames();
 
@@ -11,6 +10,7 @@ const slides = document.getElementsByClassName("slideshow-container")[0].getElem
 
 showSlides(slides);
 getFour(games);
+buyNowBtn()
 
 
 

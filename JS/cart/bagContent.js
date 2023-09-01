@@ -22,7 +22,7 @@ export default function bagContent(game) {
         <p class="product-price">${game.price}</p>
     </div>
     <div class="column">
-        <i class="fa-solid fa-xmark" id="remove"></i>
+        <i class="fa-solid fa-xmark remove" id="${game.id}"></i>
     </div>`
 };
 
