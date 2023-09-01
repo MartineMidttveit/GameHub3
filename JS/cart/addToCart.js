@@ -1,3 +1,6 @@
+
+const count = document.getElementById("count");
+
 export default function addToCart(id) {
     const getProducts = localStorage.getItem("products");
     let parsedProducts = JSON.parse(getProducts);
@@ -6,5 +9,7 @@ export default function addToCart(id) {
      const addedProducts = [...parsedProducts, id]
 
     localStorage.setItem("products", JSON.stringify(addedProducts));
+
+    count.textContent = addedProducts.length;
 }
 
