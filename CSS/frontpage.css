@@ -262,8 +262,18 @@
     width: calc(100% - 16px);
     max-width: 450px;
   }
+
+  .container-1 {
+    margin-right: 10%;
+    padding-left: 20%;
+  }
+
+  .container-2 {
+    margin-left: 10%;
+    padding: 5% 15% 5% 10%;
+    width: 90%;
+  }
 }
 
-  /* MEDIA QUERIES LAPTOP */
       
 
