@@ -66,31 +66,108 @@ input {
     cursor: pointer;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1080px) {
-    .grid-wrapper {
-        overflow: auto;
+.mobile {
+    display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    
+    .shoppingbag {
+        width: 90%;
+        padding: 5% 10%;
+    }
+    .shoppingbag .subtitles {
+        font-size: 1.2rem;
+        padding-top: 5%;
+    }
+
+    .grid .column {
+        display: none;
     }
 
     .grid {
-        overflow: auto;
-        gap: 16px;
+        display: unset;
     }
 
-    .grid::-webkit-scrollbar {
-        height: 7px;
+    .mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        padding-top: 10%;
     }
-    
-    .grid::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-radius: 10px;
+
+    .column-1 {
+        height: 150px;
+        width: 100%;
+        grid-column: 1/2;
     }
-    
-    .grid::-webkit-scrollbar-thumb {
-        background: #888;
-        border-radius: 10px;
+
+    .column-2 {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        gap: .6rem;
     }
-    
-    .grid::-webkit-scrollbar-thumb:hover {
-        background: #555;
+
+    .product-image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .quantity input {
+        width: 70%;
+    }
+
+    .quantity {
+        display: inline-flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .remove {
+        height: 30px;
+        width: 30px;
+    }
+
+    .shoppingbag .button {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1080px) {
+
+    .grid .column {
+        display: none;
+    }
+
+    .grid {
+        display: unset;
+    }
+
+    .mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+    }
+
+    .column-1 {
+        height: 250px;
+        width: 100%;
+        grid-column: 1/2;
+    }
+
+    .column-2 {
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+
+    .product-image {
+        height: 100%;
+        width: 80%;
+        object-fit: cover;
     }
 }
