@@ -188,13 +188,18 @@ figcaption {
 }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
+
+    .content {
+        width: 90%;
+    }
+
     .gameContainer {
         flex-direction: column;
         padding-top: 45px;
     }
 
     .gameContainer  .product-image {
-        width: 60%;
+        width: 85%;
     }
 
     .game-desc {
@@ -202,9 +207,22 @@ figcaption {
     }
 
     .gameContainer .game-text {
-        width: 90%;
+        width: 80%;
         padding-left: 24px;
         padding-right: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gameContainer .game-text a.underline {
+        width: 70%;
+        margin-top: 18px;
+    }
+
+    .gameContainer .game-text a.underline button {
+        width: 100%;
+        padding: 0;
     }
 
     .game-details {
@@ -214,5 +232,41 @@ figcaption {
     .game-details .game-description,
     .game-details .age-limit {
         width: 100%;
+    }
+
+    .dropdown-wrapper {
+        width: 100%;
+        padding-top: 15%;
+    }
+
+    #price {
+        padding-top: 7%;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1140px) {
+    .gameContainer {
+        flex-direction: column;
+    }
+
+    .gameContainer .product-image {
+        padding-top: 10%;
+        width: 70%;
+    }
+
+    .game-text {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-text .buy-now {
+        width: 140px;
+        margin-top: 15%;
+    }
+
+    .game-desc {
+        text-align: center;
     }
 }
