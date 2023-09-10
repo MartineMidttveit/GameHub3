@@ -29,7 +29,7 @@ if (parsedProducts && parsedProducts.length >= 1) {
     const mainText = document.querySelector("h1")
     
     gameContainer.textContent =""
-    buttonHtml.textContent = "Back to Shop"
+    buttonHtml.textContent = "SHOP MORE"
     buttonHtml.href ="./shop.html"
     mainText.textContent = "SHOPPINGBAG IS EMPTY"
 }}
