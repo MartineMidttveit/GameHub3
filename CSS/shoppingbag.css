@@ -150,6 +150,7 @@ input {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 6rem;
+        margin-top: 5%;
     }
 
     .column-1 {
@@ -168,5 +169,9 @@ input {
     .product-image {
         height: 100%;
         width: 80%;
+    }
+
+    .remove {
+        margin-top: 5%;
     }
 }
