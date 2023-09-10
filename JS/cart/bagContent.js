@@ -41,7 +41,6 @@ export default function bagContent(game) {
             </form>
         </div>
     </div>
-    
     `
 };
 
