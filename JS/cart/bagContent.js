@@ -40,8 +40,7 @@ export default function bagContent(game) {
                 <i class="fa-solid fa-xmark remove" id="${game.id}"></i>
             </form>
         </div>
-    </div>
-    `
+    </div>`
 };
 
 
