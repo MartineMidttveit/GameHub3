@@ -34,7 +34,7 @@ export default function bagContent(game) {
 
         <div class="column-2">
             <p class="product-name">${game.title}</p>
-            <p class="product-price">${game.price}</p>
+            <p class="product-price">£ ${game.price}</p>
             <form class="quantity">
                 <input type="number">
                 <i class="fa-solid fa-xmark remove" id="${game.id}"></i>
