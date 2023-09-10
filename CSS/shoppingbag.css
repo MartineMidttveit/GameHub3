@@ -72,6 +72,25 @@ input {
     }
 
     .grid {
-        min-width: 700px;
+        overflow: auto;
+        gap: 16px;
+    }
+
+    .grid::-webkit-scrollbar {
+        height: 7px;
+    }
+    
+    .grid::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    
+    .grid::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+    }
+    
+    .grid::-webkit-scrollbar-thumb:hover {
+        background: #555;
     }
 }
