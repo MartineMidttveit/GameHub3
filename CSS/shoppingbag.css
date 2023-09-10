@@ -45,6 +45,7 @@ input {
     height: 80%;
     width: 80%;
     border-radius: 6px;
+    object-fit: cover;
 }
 
 .column,
@@ -78,7 +79,7 @@ input {
     }
     .shoppingbag .subtitles {
         font-size: 1.2rem;
-        padding-top: 5%;
+        padding-top: 8%;
     }
 
     .grid .column {
@@ -112,7 +113,6 @@ input {
     .product-image {
         height: 100%;
         width: 100%;
-        object-fit: cover;
         margin: 0;
     }
 
@@ -168,6 +168,5 @@ input {
     .product-image {
         height: 100%;
         width: 80%;
-        object-fit: cover;
     }
 }
