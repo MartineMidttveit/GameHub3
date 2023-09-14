@@ -14,3 +14,5 @@ export default function remove(id) {
     localStorage.setItem("products", JSON.stringify(list));
     location.reload();
 }
+
+
