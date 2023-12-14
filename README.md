@@ -1,4 +1,4 @@
-# COMMUNITY SCIENCE MUSEUM
+# GAMEHUB
 
 ![Skjermbilde 2023-12-06 023549](https://github.com/MartineMidttveit/GameHub3/assets/125905644/04b3984a-c66b-41a5-8674-d3c1184cda3b)
 
